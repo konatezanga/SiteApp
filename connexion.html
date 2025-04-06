@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Artisan</title>
+    <link rel="stylesheet" href="css/connexion.css">
+</head>
+<body>
+    <div class="titre-section">
+        <h1>Connexion Artisan</h1>
+        <p>Accédez à votre espace pour gérer votre profil et vos annonces</p>
+    </div>
+
+    <section class="form-section">
+        <form action="#" method="post" class="artisan-form">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+
+            <label for="secteur">Secteur d'activité</label>
+            <select name="secteur" id="secteur" required>
+                <option value="">-- Choisissez votre secteur --</option>
+                <option>Menuisier</option>
+                <option>Plombier</option>
+                <option>Électricien</option>
+                
+            </select>
+
+            <button type="submit">Se connecter</button>
+
+            <p class="lien-inscription">Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+        </form>
+    </section>
+</body>
+</html>

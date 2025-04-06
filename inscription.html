@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Artisan</title>
+    <link rel="stylesheet" href="css/inscription.css">
+</head>
+<body>
+    <div class="titre-section">
+        <h1>Créer un compte Artisan</h1>
+        <p>Inscrivez-vous pour rejoindre notre plateforme et proposer vos services</p>
+    </div>
+
+    <section class="form-section">
+        <form action="#" method="post" class="artisan-form">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telephone" placeholder="Téléphone" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <input type="text" name="adresse" placeholder="Adresse" required>
+
+            <label for="secteur">Secteur d'activité</label>
+            <select name="secteur" id="secteur" required>
+                <option value="">-- Choisissez un secteur --</option>
+                <option>Menuisier</option>
+                <option>Plombier</option>
+                <option>Électricien</option>
+                <option>Autre (précisez ci-dessous)</option>
+            </select>
+
+            <input type="text" name="secteur_autre" placeholder="Si autre, précisez ici">
+
+            <button type="submit">S'inscrire</button>
+
+            <p class="lien-connexion">Déjà inscrit ? <a href="connexion.html">Connectez-vous ici</a></p>
+        </form>
+    </section>
+</body>
+</html>

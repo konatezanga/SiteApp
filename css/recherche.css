@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ----- HEADER ----- */
+header {
+    background: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+/* ----- MAIN CONTENT ----- */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.search-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 14px;
+    font-size: 1em;
+    border: 2px solid #2e8b57;
+    border-radius: 6px;
+}
+
+.btn-search {
+    padding: 14px 20px;
+    background-color: #2e8b57;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #246e45;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.filters select,
+.filters button {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+}
+
+.filters button {
+    background-color: #2e8b57;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s;
+}
+.filters button:hover {
+    background-color: #246e45;
+}
+
+.results {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 20px;
+    color: #666;
+}
+
+/* ----- POPUP ARTISAN ----- */
+.popup-artisan {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: white;
+    border: 2px solid #2e8b57;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    z-index: 1000;
+}
+.popup-artisan p {
+    font-size: 0.95em;
+}
+.popup-artisan a {
+    color: #2e8b57;
+    font-weight: bold;
+    text-decoration: none;
+}
+.popup-artisan a:hover {
+    text-decoration: underline;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    font-size: 0.95em;
+    color: #333;
+}
