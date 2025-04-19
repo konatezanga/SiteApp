@@ -79,6 +79,49 @@ header p {
     background-color: #246e45;
 }
 
+/* ----- Aperçu Artisan Résultat Simple ----- */
+.artisan-search-preview {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.preview-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.preview-info h3 {
+    color: #2e8b57;
+    margin-bottom: 6px;
+    font-size: 1.2em;
+}
+
+.preview-info p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.preview-row .btn-view {
+    padding: 8px 14px;
+    background-color: #2e8b57;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.preview-row .btn-view:hover {
+    background-color: #246e45;
+}
+
 .filters {
     display: flex;
     flex-wrap: wrap;

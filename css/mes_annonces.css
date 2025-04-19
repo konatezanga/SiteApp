@@ -1,0 +1,107 @@
+.annonces-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.annonces-section h2 {
+    text-align: center;
+    color: #2e8b57;
+    margin-bottom: 30px;
+}
+
+.annonce-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.card-info h3 {
+    margin-bottom: 6px;
+    color: #2e8b57;
+}
+
+.card-info p {
+    font-size: 0.95em;
+    margin: 3px 0;
+    color: #444;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-view, .btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-view {
+    background-color: #2e8b57;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #246e45;
+}
+
+.btn-delete {
+    background-color: #e53935;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c62828;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-info h3,
+.card-info p {
+    margin: 5px 0;
+    width: 100%; /* Les titres et paragraphes s'empilent à gauche */
+}
+
+.card-info a.btn-view,
+.card-info button.btn-delete {
+    margin-left: 10px;
+}
+
+.card-info a.btn-view,
+.card-info button.btn-delete {
+    margin-top: 0;
+}
+
+/* Aligne les boutons à droite */
+.card-info a.btn-view,
+.card-info button.btn-delete {
+    align-self: flex-start;
+}
+
+/* Regroupe les boutons sur une seule ligne à droite */
+.card-info a.btn-view {
+    margin-left: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .actions {
+        flex-direction: column;
+    }
+}

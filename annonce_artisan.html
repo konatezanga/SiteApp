@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier une annonce</title>
+    <link rel="stylesheet" href="css/annonce_artisan.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Publier une annonce</h1>
+        <a href="espace-artisan.html" class="btn-retour">Retour à l'espace</a>
+    </header>
+
+    <main class="annonce-container">
+        <form class="annonce-form">
+            <label for="titre">Titre de l'annonce</label>
+            <input type="text" id="titre" name="titre" placeholder="Ex: Installation de cuisine sur mesure" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Détaillez les services proposés, la durée estimée, etc." required></textarea>
+
+            <label for="images">Images illustratives</label>
+            <input type="file" id="images" name="images" accept="image/*" multiple>
+
+            <label for="tarif">Tarifs indicatifs</label>
+            <input type="text" id="tarif" name="tarif" placeholder="Ex: à partir de 25.000 FCFA" required>
+
+            <label for="localisation">Localisation</label>
+            <input type="text" id="localisation" name="localisation" placeholder="Ville ou quartier" required>
+
+            <button type="submit">Publier l'annonce</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Plateforme des Artisans | Tous droits réservés</p>
+    </footer>
+</body>
+</html>

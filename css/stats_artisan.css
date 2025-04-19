@@ -1,0 +1,136 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f5f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #e53935;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #c62828;
+}
+
+/* Conteneur principal */
+.stat-container {
+    flex: 1;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cartes de stats */
+.stat-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.stat-card h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Résumé des chiffres */
+.stat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-box .value {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.stat-box .label {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Graphique factice */
+.fake-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fake-chart .bar {
+    width: 30px;
+    background-color: #66bb6a;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    transition: height 0.3s;
+}
+
+.fake-chart .bar span {
+    position: absolute;
+    bottom: -20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #444;
+}

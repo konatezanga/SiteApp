@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Administrateur</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            overflow-y: auto;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .btn-deconnexion {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #a53636;
+            color: white;
+            padding: 8px 16px;
+            margin: 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-deconnexion:hover {
+            background-color: #f32f2f;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            margin-right: 6px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-valider {
+            background-color: #4CAF50; /* vert */
+        }
+
+        .btn-supprimer {
+            background-color: #e53935; /* rouge */
+        }
+
+        .btn-valider:hover {
+            background-color: #17821b; /* vert */
+        }
+
+        .btn-supprimer:hover {
+            background-color: #9b1e1c; /* rouge */
+        }
+
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tableau de Bord Administrateur</h1>
+        <a href="" class="btn-deconnexion">Déconnexion</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Gestion des Utilisateurs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Téléphone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>wilfred zanga</td>
+                        <td>00 00 00 00 00</td>
+                        <td>
+                            <button class="btn btn-valider">Valider</button>
+                            <button class="btn btn-supprimer">Supprimer</button>
+                        </td>
+                    </tr>
+                    <!-- Autres utilisateurs ici -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Modération des Annonces</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Artisan</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Peinture Façade</td>
+                        <td>Marie Koné</td>
+                        <td>
+                            <button class="btn btn-valider">Valider</button>
+                            <button class="btn btn-supprimer">Supprimer</button>
+                        </td>
+                    </tr>
+                    
+                    <!-- Autres annonces ici -->
+                </tbody>
+            </table>
+        </section>
+
+        <section style="grid-column: span 2">
+            <h2>Statistiques Générales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Valeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre total d'inscriptions</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre total de visites</td>
+                        <td>3 248</td>
+                    </tr>
+                    <!-- Autres statistiques ici -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

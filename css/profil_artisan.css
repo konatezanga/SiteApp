@@ -1,0 +1,121 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f5f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #e53935;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.95em;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #c62828;
+}
+
+/* Conteneur principal */
+.profil-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.profil-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profil-form h2 {
+    color: #2e7d32;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.profil-form input[type="text"],
+.profil-form input[type="email"],
+.profil-form input[type="file"],
+.profil-form textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #c8e6c9;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #f9f9f9;
+    resize: none;
+}
+
+.profil-form textarea {
+    resize: none;
+}
+
+.profil-form input[type="file"] {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+.profil-form button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: flex-start;
+}
+
+.profil-form button:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    color: #444;
+}
